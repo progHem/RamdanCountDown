@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+:root{
+    --gold-color:#e6c195;
+    --brown-color:#5d250f;
+    --orange-color:#a98e7c;
+    --blue-color:#127282;
+}
+.banner{
+    background-image: url(/assets/images/ramadan.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.heading{
+    margin-top: 300px;
+}
+.heading h1{
+    margin: 0;
+    font-size: 3.5rem;
+    text-shadow: var(--brown-color) 1px 0 10px;
+    color:var(--gold-color)
+}
+.time ul{
+    width:600px;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.time ul li{
+    background-color: var(--orange-color);
+    width:50px;
+    text-align: center;
+    padding:10px 20px;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    color:var(--brown-color);
+    font-weight: bolder;
+}
+.time ul:not([class='date']) li{
+    color: var(--blue-color);
+}
+.time .date li{
+    font-size: 1.7rem;
+}
+
+@media (max-width: 767.98px) {
+    html{
+        font-size: 0.75rem;
+    }
+    .heading{
+        margin-top: 13vh;
+    }
+    .heading h1{
+        font-size: 2.5rem;
+    }
+    .time{
+        display: flex;
+    }
+    .time ul{
+        flex-direction: column;
+        width:auto;
+        margin: 0;
+    }
+    .time ul li{
+        margin-bottom: 10px;
+    }
+}
