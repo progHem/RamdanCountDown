@@ -12,7 +12,7 @@ body{
     --blue-color:#127282;
 }
 .banner{
-    background-image: url(/assets/images/ramadan.jpg);
+    background-image: url(/assets/images/ramadan.png);
     width: 100vw;
     height: 100vh;
     background-position: center;
