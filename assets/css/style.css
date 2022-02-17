@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+
 body{
     padding: 0;
     margin: 0;
@@ -11,7 +12,7 @@ body{
     --orange-color:#a98e7c;
     --blue-color:#127282;
 }
-.banner{
+#banner{
     background-image: url(/assets/images/ramadan.png);
     width: 100vw;
     height: 100vh;
@@ -57,7 +58,14 @@ body{
 .time .date li{
     font-size: 1.7rem;
 }
-
+.message{
+    text-align: center;
+    color: var(--gold-color);
+}
+.message h1,.message h2{
+    padding: 0;
+    margin: 0;
+}
 @media (max-width: 767.98px) {
     html{
         font-size: 0.75rem;
