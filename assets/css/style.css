@@ -70,11 +70,15 @@ body{
     }
     .time{
         display: flex;
+        margin-top: 15px;
     }
     .time ul{
         flex-direction: column;
         width:auto;
         margin: 0;
+    }
+    .time ul:not([class="date"]) {
+        padding-left: 0;
     }
     .time ul li{
         margin-bottom: 10px;
