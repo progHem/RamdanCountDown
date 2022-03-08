@@ -1,62 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
 
-body{
+*,
+*::after,
+*::before{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Cairo', sans-serif;
 }
+
+body{
+    background: url(/assets/images/mosque1.jpg) no-repeat fixed center center;
+    background-size: cover;
+    font-family: 'Cairo', Arial;
+}
 :root{
-    --gold-color:#e6c195;
+    --white-color:#f4fbff;;
     --brown-color:#5d250f;
     --orange-color:#a98e7c;
-    --blue-color:#127282;
+    --blue-color:#131337;
 }
-#banner{
-    background-image: url(/assets/images/ramadan.png);
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+html{
+    font-size: 16px;
 }
 .content{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    margin-top: 30vh;
+    width: 100%;
 }
-.heading{
-    margin-top: 300px;
-}
+
 .heading h1{
-    margin: 0;
     font-size: 3.5rem;
     text-shadow: var(--brown-color) 1px 0 10px;
-    color:var(--gold-color)
+    color:var(--white-color)
+    
+}
+.time{
+    width: 550px;
 }
 .time ul{
-    width:600px;
+    width:100%;
     list-style: none;
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .time ul li{
-    background-color: var(--orange-color);
-    width:50px;
+    font-size: 1.5rem;
+    color: var(--blue-color);
+    padding: 0.1rem 0.4rem;
+    background: #fff;
+    width: 75px;
+    margin-top: 15px;
+    border-radius: 8%;
     text-align: center;
-    padding:10px 20px;
-    border-radius: 15px;
-    font-size: 1.3rem;
-    color:var(--brown-color);
     font-weight: bolder;
+    background-color: #ffffff73;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 .time ul:not([class='date']) li{
     color: var(--blue-color);
 }
 .time .date li{
-    font-size: 1.7rem;
+    color:var(--brown-color)
 }
 .message{
     text-align: center;
@@ -68,22 +78,20 @@ body{
 }
 @media (max-width: 767.98px) {
     html{
-        font-size: 0.75rem;
+        font-size:13px;
     }
-    .heading{
-        margin-top: 13vh;
-    }
+
     .heading h1{
         font-size: 2.5rem;
     }
     .time{
         display: flex;
-        margin-top: 15px;
+        width: 80%;
+        justify-content: space-evenly;
     }
     .time ul{
         flex-direction: column;
-        width:auto;
-        margin: 0;
+        width: fit-content;
     }
     .time ul:not([class="date"]) {
         padding-left: 0;
